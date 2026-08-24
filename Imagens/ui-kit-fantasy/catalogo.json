@@ -1,0 +1,272 @@
+[
+  {
+    "nome": "01-moldura-grande",
+    "largura": 565,
+    "altura": 295
+  },
+  {
+    "nome": "02-canto-superior-esquerdo",
+    "largura": 110,
+    "altura": 123
+  },
+  {
+    "nome": "03-barra-horizontal-longa",
+    "largura": 368,
+    "altura": 24
+  },
+  {
+    "nome": "04-canto-superior-direito",
+    "largura": 112,
+    "altura": 123
+  },
+  {
+    "nome": "05-ornamento-asa-grande",
+    "largura": 281,
+    "altura": 138
+  },
+  {
+    "nome": "06-divisoria-longa-gema",
+    "largura": 503,
+    "altura": 54
+  },
+  {
+    "nome": "07-canto-inferior-esquerdo",
+    "largura": 109,
+    "altura": 125
+  },
+  {
+    "nome": "08-gema-losango-pequena",
+    "largura": 50,
+    "altura": 60
+  },
+  {
+    "nome": "09-canto-inferior-direito",
+    "largura": 113,
+    "altura": 125
+  },
+  {
+    "nome": "10-gema-losango-grande",
+    "largura": 87,
+    "altura": 93
+  },
+  {
+    "nome": "11-ornamento-asa-superior",
+    "largura": 117,
+    "altura": 60
+  },
+  {
+    "nome": "12-barra-fina-esquerda",
+    "largura": 201,
+    "altura": 16
+  },
+  {
+    "nome": "13-barra-fina-direita",
+    "largura": 209,
+    "altura": 16
+  },
+  {
+    "nome": "14-ornamento-asa-inferior",
+    "largura": 269,
+    "altura": 90
+  },
+  {
+    "nome": "15-divisoria-curta-gema",
+    "largura": 330,
+    "altura": 60
+  },
+  {
+    "nome": "16-botao-jogar",
+    "largura": 523,
+    "altura": 151
+  },
+  {
+    "nome": "17-barra-roxa-vazia",
+    "largura": 462,
+    "altura": 147
+  },
+  {
+    "nome": "18-icone-losango-chapeu-mago",
+    "largura": 158,
+    "altura": 154
+  },
+  {
+    "nome": "19-barra-fina-roxa",
+    "largura": 313,
+    "altura": 60
+  },
+  {
+    "nome": "20-barra-fina-preta",
+    "largura": 314,
+    "altura": 65
+  },
+  {
+    "nome": "21-botao-mago",
+    "largura": 531,
+    "altura": 160
+  },
+  {
+    "nome": "22-barra-azul-vazia",
+    "largura": 463,
+    "altura": 163
+  },
+  {
+    "nome": "23-icone-losango-cajado",
+    "largura": 157,
+    "altura": 163
+  },
+  {
+    "nome": "24-painel-arredondado-escuro",
+    "largura": 217,
+    "altura": 90
+  },
+  {
+    "nome": "25-losango-escuro-vazio",
+    "largura": 91,
+    "altura": 95
+  },
+  {
+    "nome": "26-botao-loja",
+    "largura": 529,
+    "altura": 161
+  },
+  {
+    "nome": "27-barra-marrom-vazia",
+    "largura": 464,
+    "altura": 163
+  },
+  {
+    "nome": "28-icone-losango-bau",
+    "largura": 158,
+    "altura": 160
+  },
+  {
+    "nome": "29-losango-preto",
+    "largura": 73,
+    "altura": 73
+  },
+  {
+    "nome": "30-losango-roxo",
+    "largura": 64,
+    "altura": 65
+  },
+  {
+    "nome": "31-losango-azul",
+    "largura": 61,
+    "altura": 62
+  },
+  {
+    "nome": "32-seta-losango",
+    "largura": 36,
+    "altura": 57
+  },
+  {
+    "nome": "33-losango-roxo-pequeno",
+    "largura": 54,
+    "altura": 56
+  },
+  {
+    "nome": "34-efeito-linha-magenta",
+    "largura": 158,
+    "altura": 32
+  },
+  {
+    "nome": "35-efeito-raio-ondulado-roxo",
+    "largura": 152,
+    "altura": 52
+  },
+  {
+    "nome": "36-efeito-linha-azul",
+    "largura": 158,
+    "altura": 31
+  },
+  {
+    "nome": "37-pill-roxa",
+    "largura": 152,
+    "altura": 60
+  },
+  {
+    "nome": "38-hexagono-roxo-claro",
+    "largura": 138,
+    "altura": 61
+  },
+  {
+    "nome": "39-hexagono-roxo-escuro",
+    "largura": 143,
+    "altura": 59
+  },
+  {
+    "nome": "40-efeito-relampago-roxo",
+    "largura": 80,
+    "altura": 217
+  },
+  {
+    "nome": "41-efeito-relampago-azul",
+    "largura": 74,
+    "altura": 217
+  },
+  {
+    "nome": "42-efeito-linha-dourada",
+    "largura": 151,
+    "altura": 33
+  },
+  {
+    "nome": "43-icone-engrenagem",
+    "largura": 178,
+    "altura": 156
+  },
+  {
+    "nome": "44-icone-trofeu",
+    "largura": 169,
+    "altura": 155
+  },
+  {
+    "nome": "45-icone-livro",
+    "largura": 177,
+    "altura": 155
+  },
+  {
+    "nome": "46-painel-quadrado-vazio",
+    "largura": 161,
+    "altura": 155
+  },
+  {
+    "nome": "47-pill-azul",
+    "largura": 153,
+    "altura": 61
+  },
+  {
+    "nome": "48-hexagono-azul-claro",
+    "largura": 137,
+    "altura": 61
+  },
+  {
+    "nome": "49-hexagono-azul-escuro",
+    "largura": 143,
+    "altura": 60
+  },
+  {
+    "nome": "50-efeito-brilho-pequeno",
+    "largura": 40,
+    "altura": 44
+  },
+  {
+    "nome": "51-efeito-circulo-magico",
+    "largura": 130,
+    "altura": 143
+  },
+  {
+    "nome": "52-pill-marrom",
+    "largura": 151,
+    "altura": 61
+  },
+  {
+    "nome": "53-hexagono-marrom-claro",
+    "largura": 136,
+    "altura": 61
+  },
+  {
+    "nome": "54-hexagono-marrom-escuro",
+    "largura": 143,
+    "altura": 60
+  }
+]

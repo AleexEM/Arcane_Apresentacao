@@ -1,0 +1,18 @@
+{
+  "cemiterio": {
+    "displayName": "Cemitério Torcido",
+    "sourceFolder": "cemiterio",
+    "processedFolder": "cemiterio"
+  },
+  "vila": {
+    "displayName": "Mina de Cristal",
+    "sourceFolder": "mina",
+    "processedFolder": "mina",
+    "note": "Preserve the logical id 'vila' for domain/save compatibility. Do not rename the C# map id during this rework."
+  },
+  "fortaleza": {
+    "displayName": "Forja Rubra",
+    "sourceFolder": "forja",
+    "processedFolder": "forja"
+  }
+}
