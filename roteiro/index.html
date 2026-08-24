@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arcane Dead — Roteiro de Apresentação</title>
-  <link rel="icon" type="image/png" href="Imagens/logo.png" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Arcane Dead — Roteiro da Apresentação</title>
+  <link rel="icon" type="image/png" href="../Imagens/logo.png" />
+  <link rel="stylesheet" href="../style.css" />
   <style>
     body {
       padding: 0;
@@ -20,7 +20,7 @@
       top: 0;
       background: linear-gradient(180deg, rgba(14, 8, 28, 0.98) 0%, rgba(7, 4, 13, 0.95) 100%);
       border-bottom: 2px solid var(--border-gold);
-      padding: 0.9rem 2rem;
+      padding: 0.8rem 2rem;
       z-index: 100;
       display: flex;
       justify-content: space-between;
@@ -36,12 +36,12 @@
     }
 
     .roteiro-header-left img {
-      height: 40px;
+      height: 38px;
     }
 
     .roteiro-header-left h1 {
       font-family: var(--font-title);
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       color: var(--gold-glow);
       margin: 0;
     }
@@ -56,10 +56,10 @@
       background: linear-gradient(135deg, #1c1330 0%, #2a1b48 100%);
       border: 1px solid var(--border-gold);
       color: var(--gold-glow);
-      padding: 0.5rem 1.1rem;
+      padding: 0.45rem 1rem;
       border-radius: 4px;
       font-family: var(--font-title);
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       text-decoration: none;
       cursor: pointer;
       display: inline-flex;
@@ -100,9 +100,9 @@
       background: rgba(20, 13, 34, 0.8);
       border: 1px solid rgba(201, 162, 39, 0.35);
       color: var(--text-parchment);
-      padding: 0.45rem 0.9rem;
+      padding: 0.4rem 0.85rem;
       border-radius: 20px;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       text-decoration: none;
       transition: all 0.2s;
     }
@@ -151,7 +151,7 @@
     .block-meta {
       display: flex;
       gap: 1.5rem;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--text-parchment-dim);
       margin-bottom: 1.5rem;
       border-bottom: 1px solid rgba(201, 162, 39, 0.2);
@@ -175,7 +175,7 @@
 
     .section-subtitle-rot {
       font-family: var(--font-title);
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       color: var(--gold-glow);
       margin: 1.5rem 0 0.6rem;
       display: flex;
@@ -196,93 +196,75 @@
       align-items: flex-start;
       gap: 0.75rem;
       cursor: pointer;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       line-height: 1.5;
     }
 
     .checklist input[type="checkbox"] {
       margin-top: 0.25rem;
-      accent-color: var(--gold-glow);
-      transform: scale(1.2);
-    }
-
-    .tip-pill-box {
-      background: rgba(138, 101, 206, 0.12);
-      border: 1px solid rgba(138, 101, 206, 0.4);
-      border-radius: 6px;
-      padding: 1rem 1.25rem;
-      margin-top: 1.5rem;
-      font-size: 0.9rem;
-      color: var(--text-parchment);
-    }
-
-    .tip-pill-box strong {
-      color: #d8b4fe;
+      accent-color: var(--border-gold);
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Bar -->
+  <!-- HEADER STICKY DO ROTEIRO -->
   <header class="roteiro-header">
     <div class="roteiro-header-left">
-      <img src="Imagens/logo.png" alt="Arcane Dead Logo" />
-      <h1>Guia & Roteiro do Apresentador</h1>
+      <img src="../Imagens/logo.png" alt="Logo Arcane Dead" />
+      <h1>ARCANE DEAD · GUIA DE APRESENTAÇÃO</h1>
     </div>
     <div class="roteiro-actions">
-      <a href="index.html" class="btn-roteiro">
-        <span>↶</span> Voltar à Apresentação
+      <a href="../index.html" class="btn-roteiro">
+        ← Voltar aos Slides
       </a>
     </div>
   </header>
 
   <div class="roteiro-container">
 
-    <!-- Card de Introdução -->
+    <!-- INTRODUÇÃO GERAL -->
     <div class="roteiro-intro-card">
-      <h2 style="font-family:var(--font-title); color:var(--gold-glow); margin-bottom:0.75rem;">
-        📜 Roteiro Estruturado de Apresentação (10 Minutos)
+      <span class="block-badge">Estrutura de Tempo Total: 10 Minutos</span>
+      <h2 style="font-family:var(--font-title); font-size:2rem; color:#fff; margin-bottom:0.8rem;">
+        Roteiro Oficial de Fala do Grupo
       </h2>
-      <p style="font-size:1.05rem; line-height:1.7;">
-        Este guia foi formulado para garantir que o grupo cubra todos os pontos essenciais do projeto <strong>Arcane Dead</strong> com naturalidade, clareza técnica e impacto visual. Conforme for apresentando cada seção, você pode marcar os tópicos do checklist.
+      <p style="font-size:1.05rem; line-height:1.7; color:var(--text-parchment);">
+        Este documento contém o roteiro sincronizado para a apresentação. Cada bloco foi estruturado para garantir fluidez, clareza técnica e destaque para as decisões de engenharia e orientação a objetos.
       </p>
 
       <div class="roteiro-nav-bar">
-        <a href="#bloco-1" class="roteiro-nav-item">01. Conceito & Premissa (0:00 – 1:30)</a>
-        <a href="#bloco-2" class="roteiro-nav-item">02. Identidade Visual (1:30 – 3:00)</a>
-        <a href="#bloco-3" class="roteiro-nav-item">03. Demonstração Prática (3:00 – 5:00)</a>
-        <a href="#bloco-4" class="roteiro-nav-item">04. Arquitetura POO (5:00 – 7:00)</a>
-        <a href="#bloco-5" class="roteiro-nav-item">05. Processo & Retrospectiva (7:00 – 8:30)</a>
-        <a href="#bloco-6" class="roteiro-nav-item">06. Equipe & Fecho (8:30 – 10:00)</a>
+        <a href="#bloco-1" class="roteiro-nav-item">01. Visão Geral (1m30s)</a>
+        <a href="#bloco-2" class="roteiro-nav-item">02. Direção de Arte (1m30s)</a>
+        <a href="#bloco-3" class="roteiro-nav-item">03. Sistemas de Combate (2m00s)</a>
+        <a href="#bloco-4" class="roteiro-nav-item">04. Arquitetura POO (2m00s)</a>
+        <a href="#bloco-5" class="roteiro-nav-item">05. Post-Mortem (1m30s)</a>
+        <a href="#bloco-6" class="roteiro-nav-item">06. Equipe & Código (1m30s)</a>
       </div>
     </div>
 
     <!-- BLOCO 01 -->
     <section id="bloco-1" class="block-card">
       <span class="block-badge">Bloco 01 · 90 Segundos</span>
-      <h3 class="block-title">Conceito, Premissa & Inspirações</h3>
+      <h3 class="block-title">Visão Geral, Conceito & Premissa</h3>
       <div class="block-meta">
-        <span>⏱ <strong>Tempo sugerido:</strong> 0:00 – 1:30</span>
-        <span>🎯 <strong>Meta:</strong> Prender a atenção, definir gênero e tema</span>
+        <span>Tempo: 0:00 – 1:30</span>
+        <span>Meta: Apresentar a premissa narrativa, o gênero do jogo e as principais inspirações</span>
       </div>
 
       <div class="speech-box">
-        "Olá a todos! Hoje temos o orgulho de apresentar o <strong>Arcane Dead</strong>, um RPG tático roguelike por turnos desenvolvido em <strong>C# .NET 8</strong> com versões para Terminal Console e Navegador Web 2D.<br><br>
-        O universo se passa no Reino de Véspera, onde o vilão Aster Vhal quebrou os três selos primordiais da magia: a Chama, a Geada e a Pestilência. Guiados pela Cartógrafa Cega, os nossos três magos sobreviventes devem cruzar terras corrompidas para restaurar o equilíbrio.<br><br>
-        Nossa premissa se inspira na atmosfera densa e punitiva de <em>Darkest Dungeon</em>, na progressão rápida e envolvente de <em>Vampire Survivors</em> e na estratégia por turnos de <em>Slay the Spire</em>."
+        "Olá a todos! Nosso projeto é o <strong>Arcane Dead</strong>, um RPG tático roguelike por turnos desenvolvido em <strong>C# .NET 8</strong> com suporte a terminal de console e interface web 2D.<br><br>
+        O jogo se passa no Reino de Véspera após o rompimento dos três selos primordiais da magia: a Chama, a Geada e a Pestilência. O jogador controla os últimos arcanistas sobreviventes que precisam cruzar rotas hostis para expurgar as abominações despertadas.<br><br>
+        Nossas principais referências foram <strong>Darkest Dungeon</strong> para a atmosfera sombria e o sistema punitivo de estados alterados; <strong>Slay the Spire</strong> pela clareza tática das decisões e intenções do inimigo; e <strong>Diablo</strong> pela temática dark fantasy medieval."
       </div>
 
-      <div class="section-subtitle-rot">📋 O Que Não Pode Faltar na Fala:</div>
+      <div class="section-subtitle-rot">Tópicos Essenciais para a Fala:</div>
       <ul class="checklist">
-        <li><label><input type="checkbox"> Falar o nome do jogo com energia: <strong>Arcane Dead</strong>.</label></li>
-        <li><label><input type="checkbox"> Citar o gênero: <em>RPG Roguelike Tático por Turnos</em>.</label></li>
-        <li><label><input type="checkbox"> Mencionar a tecnologia: C# .NET 8 e Web 2D.</label></li>
-        <li><label><input type="checkbox"> Citar as 4 referências: Darkest Dungeon, Vampire Survivors, Diablo e Slay the Spire.</label></li>
+        <li><label><input type="checkbox"> Apresentar o nome <strong>Arcane Dead</strong> e o gênero (RPG Tático Roguelike).</label></li>
+        <li><label><input type="checkbox"> Citar a frase de impacto: <em>"Toda magia deixa um eco. Toda morte cobra um nome."</em></label></li>
+        <li><label><input type="checkbox"> Destacar as inspirações (Darkest Dungeon, Slay the Spire, Diablo).</label></li>
+        <li><label><input type="checkbox"> Mostrar a imagem do Lobby e a preparação da jornada.</label></li>
       </ul>
-
-      <div class="tip-pill-box">
-        <strong>💡 Dica de Palco:</strong> Não gaste tempo lendo slides extensos; deixe as ilustrações do lobby na tela falarem por si enquanto você passa a essência do jogo.
-      </div>
     </section>
 
     <!-- BLOCO 02 -->
@@ -290,22 +272,23 @@
       <span class="block-badge">Bloco 02 · 90 Segundos</span>
       <h3 class="block-title">Identidade Visual & Direção de Arte</h3>
       <div class="block-meta">
-        <span>⏱ <strong>Tempo sugerido:</strong> 1:30 – 3:00</span>
-        <span>🎨 <strong>Meta:</strong> Destacar a paleta, os 3 magos e o desafio multiplataforma</span>
+        <span>Tempo: 1:30 – 3:00</span>
+        <span>Meta: Apresentar a paleta grimório, os 3 magos e o desafio multiplataforma</span>
       </div>
 
       <div class="speech-box">
-        "Para a Identidade Visual, optamos pela estética de <strong>Dark Fantasy medieval</strong>, inspirada em grimórios arcanos antigos.<br><br>
-        Definimos uma paleta com cores canônicas: o <em>Fundo Abissal</em> (#07040d), o <em>Ouro Arcano</em> (#c9a227) e o <em>Roxo da Corrupção</em> (#8a65ce), combinados às cores de cada elemento: Vermelho para Ignis (Chama), Azul para Nivor (Geada) e Verde para Mortis (Pestilência).<br><br>
-        <strong>Nosso maior desafio de design foi a Coerência Multiplataforma:</strong> queríamos que o jogador tivesse exatamente a mesma sensação sombria ao jogar no Terminal Console com caracteres ANSI, na interface desktop em Windows Forms ou na versão Web 2D com spritesheets animados."
+        "Para a direção de arte, construímos uma identidade visual inspirada em um antigo grimório de feitiçaria.<br><br>
+        Nossa paleta cromática utiliza o <strong>Fundo Abissal (#07040d)</strong>, o <strong>Ouro Arcano (#c9a227)</strong> e o <strong>Roxo Corrupção (#8a65ce)</strong>, com acentos vibrantes para cada elemento: Laranja para a Chama de Ignis, Azul Celeste para a Geada de Nivor e Verde Tóxico para a Pestilência de Mortis.<br><br>
+        Cada mago possui sua própria moldura dourada e estilo de jogo bem definido. Além disso, criamos três chefes temáticos: o <em>General de Cinzas</em>, o <em>Vigia Congelado</em> e o <em>Colosso Decomposto</em>.<br><br>
+        <strong>Nosso maior desafio de design foi a Coerência Multiplataforma:</strong> garantir que o jogador tenha exatamente a mesma identidade estética ao jogar no Terminal Console com caracteres ANSI, no Windows Forms ou no Navegador Web."
       </div>
 
-      <div class="section-subtitle-rot">📋 O Que Não Pode Faltar na Fala:</div>
+      <div class="section-subtitle-rot">Tópicos Essenciais para a Fala:</div>
       <ul class="checklist">
-        <li><label><input type="checkbox"> Mostrar a paleta de cores interativa.</label></li>
+        <li><label><input type="checkbox"> Clicar em uma cor da paleta para demonstrar a cópia do HEX.</label></li>
         <li><label><input type="checkbox"> Apresentar os 3 heróis: Ignis (Chama), Nivor (Geada) e Mortis (Pestilência).</label></li>
-        <li><label><input type="checkbox"> Explicar o desafio da coerência estética entre Console, Desktop e Web.</label></li>
-        <li><label><input type="checkbox"> Mostrar os 3 chefes: General de Cinzas, Vigia Congelado e Colosso Decomposto.</label></li>
+        <li><label><input type="checkbox"> Apresentar os 3 chefes de rota.</label></li>
+        <li><label><input type="checkbox"> Explicar o desafio da harmonia visual entre Console e Web.</label></li>
       </ul>
     </section>
 
@@ -314,72 +297,74 @@
       <span class="block-badge">Bloco 03 · 2 Minutos</span>
       <h3 class="block-title">Mecânicas de Combate & Exploração</h3>
       <div class="block-meta">
-        <span>⏱ <strong>Tempo sugerido:</strong> 3:00 – 5:00</span>
-        <span>⚔️ <strong>Meta:</strong> Apresentar o sistema de combate e as 3 rotas de exploração</span>
+        <span>Tempo: 3:00 – 5:00</span>
+        <span>Meta: Explicar o sistema de combate e as 3 rotas de mapa</span>
       </div>
 
       <div class="speech-box">
-        "O combate do <strong>Arcane Dead</strong> é estruturado sobre <strong>4 pilares táticos</strong>:<br><br>
-        1. <strong>O Triângulo Elemental:</strong> Fogo vence Pestilência (1.5x de dano), Pestilência vence Geada (1.5x) e Geada vence Fogo (1.5x). Se usar o elemento desfavorável, o dano cai para 0.75x.<br>
-        2. <strong>Estados Alterados:</strong> Queimadura causa dano constante por rodada; Congelamento faz o alvo perder a ação; Veneno acumula dano progressivo.<br>
-        3. <strong>Passivas Únicas:</strong> Cada mago possui uma regra própria — Ignis bate mais forte com pouca vida, Nivor acumula barreira de gelo e Mortis drena poder dos status no alvo.<br>
-        4. <strong>Fases dos Chefes:</strong> Ao atingir 50% de HP, o chefe entra em fúria com novos ataques telegrafados.<br><br>
-        Além do combate, estruturamos a jornada em <strong>3 rotas temáticas de mapa</strong>: o <em>Cemitério Torcido</em> (Pestilência), a <em>Mina de Cristal</em> (Geada) e a <em>Forja Rubra</em> (Chama)."
+        "O combate do <strong>Arcane Dead</strong> é estruturado sobre 4 pilares fundamentais:<br><br>
+        1. <strong>O Triângulo Elemental:</strong> Fogo supera Pestilência (1.5x de dano), Pestilência supera Geada (1.5x) e Geada supera Fogo (1.5x). Usar o elemento desfavorável reduz o dano para 0.75x.<br>
+        2. <strong>Estados Alterados:</strong> Queimadura causa dano direto por rodada; Congelamento impede a ação do alvo no turno; e Veneno acumula dano progressivo.<br>
+        3. <strong>Passivas Únicas:</strong> Cada mago possui um cálculo exclusivo — Ignis ganha bônus de dano com vida baixa, Nivor ergue escudo ao defender e Mortis potencializa seus feitiços pelos debuffs do alvo.<br>
+        4. <strong>Fases dos Chefes:</strong> Ao cair abaixo de 50% de HP, o chefe entra em modo de fúria com ataques em área mais agressivos.<br><br>
+        Além do combate, organizamos o mapa em 3 rotas temáticas: o Cemitério Torcido (Pestilência), a Mina de Cristal (Geada) e a Forja Rubra (Chama)."
       </div>
 
-      <div class="section-subtitle-rot">📋 O Que Não Pode Faltar na Fala:</div>
+      <div class="section-subtitle-rot">Tópicos Essenciais para a Fala:</div>
       <ul class="checklist">
-        <li><label><input type="checkbox"> Explicar o Triângulo Elemental de Fraquezas (Fogo, Geada, Pestilência).</label></li>
-        <li><label><input type="checkbox"> Explicar os Estados Alterados (Queimadura, Congelamento, Veneno).</label></li>
-        <li><label><input type="checkbox"> Citar as 3 Rotas de Exploração no mapa.</label></li>
+        <li><label><input type="checkbox"> Explicar a regra do Triângulo Elemental (Fogo > Pestilência > Geada > Fogo).</label></li>
+        <li><label><input type="checkbox"> Explicar os 3 Estados Alterados (Queimadura, Congelamento, Veneno).</label></li>
+        <li><label><input type="checkbox"> Apresentar as passivas de cada Mago.</label></li>
+        <li><label><input type="checkbox"> Apresentar as 3 rotas de exploração no mapa.</label></li>
       </ul>
     </section>
 
     <!-- BLOCO 04 -->
     <section id="bloco-4" class="block-card">
       <span class="block-badge">Bloco 04 · 2 Minutos</span>
-      <h3 class="block-title">Arquitetura de Software & POO</h3>
+      <h3 class="block-title">Arquitetura de Software & Princípios POO</h3>
       <div class="block-meta">
-        <span>⏱ <strong>Tempo sugerido:</strong> 5:00 – 7:00</span>
-        <span>💡 <strong>Meta:</strong> Explicar a engenharia e a orientação a objetos de forma clara</span>
+        <span>Tempo: 5:00 – 7:00</span>
+        <span>Meta: Explicar a engenharia de software, contratos e divisão em camadas</span>
       </div>
 
       <div class="speech-box">
-        "Por trás de toda essa jogabilidade existe uma <strong>arquitetura orientada a objetos sólida</strong>, desacoplada em 3 camadas:<br><br>
-        1. <strong>Camada de Domínio Puro (Core):</strong> Centraliza as classes de regras sem nenhuma dependência de tela. A classe abstrata <code>Personagem</code> serve de base tanto para <code>Mago</code> quanto para <code>Inimigo</code>, centralizando cálculo de dano e lista de efeitos polimórficos.<br><br>
-        2. <strong>Polimorfismo e Interfaces Transversais:</strong> Usamos a interface <code>IUsavel</code> para permitir que tanto Feitiços quanto Itens do inventário sejam disparados com a mesma assinatura. Usamos <code>IRecompensavel</code> para unificar a entrega de espólios de monstros e baús arcanos.<br><br>
-        3. <strong>Desacoplamento:</strong> O motor de turnos e as regras não sabem se o jogo está rodando em terminal ou navegador — qualquer nova interface pode ser adicionada sem alterar uma linha das regras."
+        "Por trás dessa jogabilidade existe uma <strong>arquitetura orientada a objetos desacoplada</strong> em 3 camadas principais:<br><br>
+        1. <strong>Domínio Puro (Core):</strong> Centraliza as classes de regras sem nenhuma dependência de tela. A classe abstrata <code>Personagem</code> serve de molde comum para <code>Mago</code> e <code>Inimigo</code>, centralizando cálculo de dano e a lista de efeitos de estado.<br><br>
+        2. <strong>Interfaces e Polimorfismo:</strong> Utilizamos a interface <code>IUsavel</code> para unificar a execução de feitiços e itens de inventário sob a mesma assinatura. A interface <code>IRecompensavel</code> padroniza a entrega de espólios de monstros e baús arcanos.<br><br>
+        3. <strong>Desacoplamento em 3 Camadas:</strong> A camada de Apresentação (Web e Console) consome apenas contratos da camada de Serviços (como o <code>MotorTurnos</code>). O núcleo de regras pode ser testado 100% de forma isolada por testes unitários."
       </div>
 
-      <div class="section-subtitle-rot">📋 O Que Não Pode Faltar na Fala:</div>
+      <div class="section-subtitle-rot">Tópicos Essenciais para a Fala:</div>
       <ul class="checklist">
-        <li><label><input type="checkbox"> Explicar a herança de <code>Personagem</code> -> <code>Mago</code> e <code>Inimigo</code>.</label></li>
-        <li><label><input type="checkbox"> Citar o uso prático de interfaces: <code>IUsavel</code> e <code>IRecompensavel</code>.</label></li>
-        <li><label><input type="checkbox"> Explicar as 3 camadas: Apresentação, Serviços e Domínio Puro.</label></li>
+        <li><label><input type="checkbox"> Explicar a herança da classe abstrata <code>Personagem</code>.</label></li>
+        <li><label><input type="checkbox"> Explicar o uso das interfaces transversais (<code>IUsavel</code> e <code>IRecompensavel</code>).</label></li>
+        <li><label><input type="checkbox"> Apresentar as 3 camadas: Apresentação, Serviços e Domínio Puro.</label></li>
+        <li><label><input type="checkbox"> Destacar a decisão de foco em 3 rotas completas e estáveis.</label></li>
       </ul>
     </section>
 
     <!-- BLOCO 05 -->
     <section id="bloco-5" class="block-card">
       <span class="block-badge">Bloco 05 · 90 Segundos</span>
-      <h3 class="block-title">Como foi o Processo do Grupo (Retrospectiva)</h3>
+      <h3 class="block-title">Processo de Desenvolvimento & Retrospectiva</h3>
       <div class="block-meta">
-        <span>⏱ <strong>Tempo sugerido:</strong> 7:00 – 8:30</span>
-        <span>🛡️ <strong>Meta:</strong> Demonstrar maturidade de engenharia e aprendizados reais</span>
+        <span>Tempo: 7:00 – 8:30</span>
+        <span>Meta: Compartilhar os desafios reais de desenvolvimento e aprendizados</span>
       </div>
 
       <div class="speech-box">
-        "Durante o desenvolvimento, tivemos grandes acertos e também desafios reais de engenharia.<br><br>
-        <strong>O que funcionou muito bem:</strong> A arquitetura modular e o versionamento em branches no GitHub permitiram que trabalhássemos em paralelo — um integrante cuidando da engine de regras enquanto outro desenvolvia a interface web.<br><br>
-        <strong>Os principais desafios:</strong> Sincronizar o motor de turnos síncrono com animações assíncronas no navegador, e o mapeamento de spritesheets frame a frame.<br><br>
-        <strong>Com mais tempo:</strong> Implementaríamos uma árvore de talentos permanentes e o modo cooperativo local."
+        "Durante o desenvolvimento, vivenciamos desafios reais de engenharia e tomamos decisões fundamentais de projeto.<br><br>
+        <strong>O que funcionou muito bem:</strong> A biblioteca central desacoplada e o fluxo de trabalho com Git e branches permitiram que trabalhássemos em paralelo — enquanto um integrante refinava a engine de regras, outro avançava na renderização Web.<br><br>
+        <strong>O principal desafio técnico:</strong> A sincronização do motor de turnos síncrono do console com o ciclo de animações assíncronas no navegador, além do mapeamento de spritesheets e casos de borda com múltiplos efeitos combinados.<br><br>
+        <strong>Com mais tempo de projeto:</strong> Adicionaríamos um sistema de talentos permanentes meta-game e a quarta classe do Mago do Véu."
       </div>
 
-      <div class="section-subtitle-rot">📋 O Que Não Pode Faltar na Fala:</div>
+      <div class="section-subtitle-rot">Tópicos Essenciais para a Fala:</div>
       <ul class="checklist">
-        <li><label><input type="checkbox"> Citar as ferramentas: Git, branches, .NET 8 e Phaser/Blazor.</label></li>
-        <li><label><input type="checkbox"> Falar do desafio das animações assíncronas na Web.</label></li>
-        <li><label><input type="checkbox"> Mencionar as ideias futuras de expansão do jogo.</label></li>
+        <li><label><input type="checkbox"> Falar sobre o paralelismo permitido pelo desacoplamento.</label></li>
+        <li><label><input type="checkbox"> Citar o desafio da sincronização assíncrona na Web.</label></li>
+        <li><label><input type="checkbox"> Apresentar a visão futura (árvore de talentos e nova classe).</label></li>
       </ul>
     </section>
 
@@ -388,22 +373,22 @@
       <span class="block-badge">Bloco 06 · 90 Segundos</span>
       <h3 class="block-title">Equipe, Conclusão & Encerramento</h3>
       <div class="block-meta">
-        <span>⏱ <strong>Tempo sugerido:</strong> 8:30 – 10:00</span>
-        <span>🎓 <strong>Meta:</strong> Agradecer, apresentar a equipe e apontar o repositório</span>
+        <span>Tempo: 8:30 – 10:00</span>
+        <span>Meta: Apresentar os integrantes, destacar o repositório e encerrar a fala</span>
       </div>
 
       <div class="speech-box">
-        "Para encerrar, apresentamos a nossa equipe — Gabriel, Alex e Gabriel — que uniram forças para dar vida a este projeto do início ao fim.<br><br>
-        O código completo, documentação de arquitetura e executáveis estão disponíveis no nosso repositório no GitHub.<br><br>
+        "Para concluir, apresentamos a equipe de desenvolvimento do <strong>Arcane Dead</strong>: Alex Eduardo, Gabriel e Gabriel, que colaboraram na concepção, arquitetura de software, balanceamento e arte do jogo.<br><br>
+        O código-fonte completo, documentação de arquitetura e executáveis estão disponíveis no nosso repositório no GitHub.<br><br>
         <em>'Toda magia deixa um eco. Toda morte cobra um nome.'</em><br>
-        Muito obrigado a todos pela atenção!"
+        Muito obrigado a todos pela atenção, e estamos abertos para perguntas!"
       </div>
 
-      <div class="section-subtitle-rot">📋 O Que Não Pode Faltar na Fala:</div>
+      <div class="section-subtitle-rot">Tópicos Essenciais para a Fala:</div>
       <ul class="checklist">
-        <li><label><input type="checkbox"> Nomear os integrantes da equipe.</label></li>
-        <li><label><input type="checkbox"> Destacar o link do repositório GitHub.</label></li>
-        <li><label><input type="checkbox"> Fechar com a frase de impacto e agradecimento.</label></li>
+        <li><label><input type="checkbox"> Nomear os integrantes da equipe e suas funções.</label></li>
+        <li><label><input type="checkbox"> Destacar o link do repositório no GitHub.</label></li>
+        <li><label><input type="checkbox"> Fechar com a frase de impacto e abrir para perguntas da banca.</label></li>
       </ul>
     </section>
 

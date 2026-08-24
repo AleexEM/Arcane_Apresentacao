@@ -10,137 +10,152 @@
 </head>
 <body>
 
-  <!-- Canvas Dinâmico de Partículas Arcanas -->
+  <!-- Canvas Dinâmico de Partículas e Brasas Arcanas com Reação ao Cursor -->
   <canvas id="particle-canvas"></canvas>
 
   <div class="app-container">
 
     <!-- ====================================================================
-         CAPA HERO (COM A LOGO OFICIAL DO ARCANE DEAD)
+         CAPA HERO CINEMATOGRÁFICA
          ==================================================================== -->
     <section id="hero-capa" class="hero-presentation-cover">
       <div class="hero-content">
-        <div class="hero-badge-track">✦ PROGRAMAÇÃO ORIENTADA A OBJETOS · TRABALHO FINAL ✦</div>
+        <div class="hero-badge-track">
+          <span class="badge-gem">◆</span>
+          <span>Programação Orientada a Objetos · Trabalho de Conclusão</span>
+          <span class="badge-gem">◆</span>
+        </div>
         
         <!-- LOGO OFICIAL DO JOGO -->
-        <img src="Imagens/logo.png" alt="Arcane Dead Logo Oficial" class="hero-game-logo" />
+        <img src="Imagens/logo.png" alt="Arcane Dead Logo Oficial" class="hero-game-logo tilt-target" />
 
-        <h2 class="hero-title-sub">RPG Tático Roguelike em C# .NET 8 & Web 2D</h2>
+        <h2 class="hero-title-sub">RPG Tático Roguelike em C# .NET 8 & Web 2D Engine</h2>
         
+        <p class="hero-tagline-desc">
+          Um sistema de combate tático focado em fraquezas elementais, estados alterados e arquitetura orientada a objetos modular e desacoplada.
+        </p>
+
         <div class="hero-quote">
           "Toda magia deixa um eco. Toda morte cobra um nome."
         </div>
 
         <div class="hero-team-pills">
-          <div class="team-pill">Membros: <strong>Gabriel</strong> · <strong>Alex</strong> · <strong>Gabriel</strong></div>
+          <div class="team-pill">
+            <span class="pill-label">Desenvolvedores:</span>
+            <strong>Alex Eduardo</strong> · <strong>Gabriel</strong> · <strong>Gabriel</strong>
+          </div>
         </div>
 
         <a href="#bloco-1" class="hero-scroll-indicator">
-          <span>Rolar para Iniciar Apresentação</span>
-          <span style="font-size:1.4rem;">▼</span>
+          <span>Iniciar Apresentação</span>
+          <span class="arrow-down">⌄</span>
         </a>
       </div>
     </section>
 
     <!-- ====================================================================
-         CORPO DA APRESENTAÇÃO CONTÍNUA (FLUXO VERTICAL DE ROLAGEM)
+         CORPO DA APRESENTAÇÃO CONTÍNUA
          ==================================================================== -->
     <main class="presentation-body">
 
       <!-- ------------------------------------------------------------------
-           BLOCO 01: CONCEITO E TEMA
+           SEÇÃO 01: VISÃO GERAL & CONCEITO
            ------------------------------------------------------------------ -->
-      <section id="bloco-1" class="presentation-section" data-block-number="1">
+      <section id="bloco-1" class="presentation-section reveal-item" data-block-number="1">
         <div class="section-header-wrap">
           <div>
-            <div class="section-tag">✦ Bloco 01 · Introdução</div>
+            <div class="section-tag">01 · Visão Geral</div>
             <h2 class="section-title">Conceito e Premissa</h2>
           </div>
           <div class="section-meta-pills">
-            <div class="meta-pill">🎯 <strong>Foco:</strong> RPG Roguelike de Fantasia Sombria</div>
+            <div class="meta-pill">
+              <span class="pill-dot"></span>
+              <strong>Gênero:</strong> RPG Roguelike de Fantasia Sombria
+            </div>
           </div>
         </div>
 
         <div class="hero-concept-layout">
           <div class="concept-text-box">
-            <div class="badge-highlight">Trilha Escolhida: RPG Roguelike de Fantasia Sombria</div>
+            <div class="badge-highlight">Premissa Narrativa</div>
             <h2>O Reino de Véspera</h2>
-            <div class="tagline">Três selos rompidos. O último sobrevivente do Refúgio das Cinzas.</div>
+            <div class="tagline">Três selos corrompidos. O último refúgio dos magos sobreviventes.</div>
             
             <p>
-              <strong>Arcane Dead</strong> é um RPG roguelike tático por turnos onde Aster Vhal, o Necromante do Véu, rompeu os três selos primordiais da magia: a <strong>Chama</strong>, a <strong>Geada</strong> e a <strong>Pestilência</strong>.
+              <strong>Arcane Dead</strong> coloca o jogador no papel dos últimos três arcanistas de Véspera após o rompimento dos selos primordiais: a <strong>Chama</strong>, a <strong>Geada</strong> e a <strong>Pestilência</strong>.
             </p>
             <p>
-              Lyra, a Cartógrafa Cega, guia os únicos três magos sobreviventes através das rotas dos mortos. Desenvolvido com uma arquitetura desacoplada em <strong>C# .NET 8</strong>, o projeto oferece uma experiência completa no <strong>Terminal Console</strong> e no <strong>Navegador Web 2D (Blazor / Phaser)</strong>.
+              Projetado com uma biblioteca central desacoplada em <strong>C# .NET 8</strong>, o jogo foi construído para funcionar de maneira agnóstica a interface, suportando execução tanto no <strong>Terminal de Console</strong> quanto no <strong>Navegador Web 2D</strong>.
             </p>
 
             <div class="section-quote">
-              "O coração da experiência: não é apenas mais um jogo de combate, é um sistema tático onde cada feitiço, fraqueza elemental e estado alterado cobra um preço."
+              "Cada combate é um enigma tático: antecipar as intenções do adversário, gerenciar custos de mana e explorar as sinergias de fraqueza elemental."
             </div>
           </div>
 
-          <div class="banner-img-container">
+          <div class="banner-img-container tilt-target">
             <img src="Imagens/gui/lobby.png" alt="Lobby Oficial do Arcane Dead" />
-            <div class="banner-caption">Interface do Lobby Oficial da Versão Web do Arcane Dead</div>
+            <div class="banner-caption">Interface do Lobby — Seleção de Magos e Preparação de Rota</div>
           </div>
         </div>
 
         <!-- Divisor Ornamental Dourado -->
         <img src="Imagens/UI_Magos_Assets_NULL/12_divisor_dourado_01.png" alt="Divisor Dourado" class="ornate-gold-divider" />
 
-        <h3 class="section-subtitle">De Onde Veio a Ideia: Referências e Inspirações</h3>
+        <h3 class="section-subtitle">Pilares de Inspiração e Referências de Game Design</h3>
+        
         <div class="grid-4">
-          <div class="ref-card">
-            <div class="ref-icon">💀</div>
+          <div class="ref-card tilt-target">
+            <div class="ref-num">01</div>
             <h4>Darkest Dungeon</h4>
-            <p>Atmosfera fúnebre opressiva, punição severa de estados alterados (queimadura, sangria) e peso em cada decisão.</p>
+            <p>Atmosfera fúnebre opressiva, punição severa de estados alterados contínuos e peso em cada decisão estratégica.</p>
           </div>
 
-          <div class="ref-card">
-            <div class="ref-icon">⚡</div>
-            <h4>Vampire Survivors</h4>
-            <p>Progressão rápida de poder, evolução exponencial de magias e sentimento constante de sobrevivência contra hordas.</p>
-          </div>
-
-          <div class="ref-card">
-            <div class="ref-icon">⚔️</div>
-            <h4>Diablo & Dark Fantasy</h4>
-            <p>Estética medieval gótica, selos arcanos corrompidos, grimórios ancestrais e chefes de mapa colossais.</p>
-          </div>
-
-          <div class="ref-card">
-            <div class="ref-icon">🃏</div>
+          <div class="ref-card tilt-target">
+            <div class="ref-num">02</div>
             <h4>Slay the Spire</h4>
-            <p>Combate em turnos legível, telegrafia clara de ações do inimigo e sinergia de atributos e relíquias.</p>
+            <p>Combate em turnos altamente legível, telegrafia visual clara das ações inimigas e sinergia de atributos e relíquias.</p>
+          </div>
+
+          <div class="ref-card tilt-target">
+            <div class="ref-num">03</div>
+            <h4>Diablo & Dark Fantasy</h4>
+            <p>Estética gótica medieval, selos arcanos corrompidos, grimórios ancestrais e batalhas marcantes contra chefes de rota.</p>
+          </div>
+
+          <div class="ref-card tilt-target">
+            <div class="ref-num">04</div>
+            <h4>Vampire Survivors</h4>
+            <p>Progressão rápida de poder, evolução exponencial de feitiços e sentimento constante de sobrevivência contra hordas.</p>
           </div>
         </div>
       </section>
 
       <!-- ------------------------------------------------------------------
-           BLOCO 02: IDENTIDADE VISUAL
+           SEÇÃO 02: IDENTIDADE VISUAL & DIREÇÃO DE ARTE
            ------------------------------------------------------------------ -->
-      <section id="bloco-2" class="presentation-section" data-block-number="2">
+      <section id="bloco-2" class="presentation-section reveal-item" data-block-number="2">
         <div class="section-header-wrap">
           <div>
-            <div class="section-tag">✦ Bloco 02 · Identidade Visual</div>
-            <h2 class="section-title">Identidade Visual & Direção de Arte</h2>
+            <div class="section-tag">02 · Direção de Arte</div>
+            <h2 class="section-title">Identidade Visual & Estética</h2>
           </div>
           <div class="section-meta-pills">
-            <div class="meta-pill">🎨 <strong>Foco:</strong> Paleta, Tipografia e Coerência Visual</div>
+            <div class="meta-pill">
+              <span class="pill-dot"></span>
+              <strong>Foco:</strong> Paleta Dark Fantasy, Spritesheets & Molduras
+            </div>
           </div>
         </div>
 
-        <p style="font-size: 1.15rem; margin-bottom: 1rem;">
-          A linguagem estética de <strong>Arcane Dead</strong> foi construída para evocar um antigo grimório de feitiçaria sombria. Cada elemento visual tem propósito: tons abissais para o reino dos mortos, roxo para a corrupção do véu e ouro antigo para a centelha de magia pura.
+        <p class="section-lead-text">
+          A estética de <strong>Arcane Dead</strong> foi construída para evocar um antigo grimório de feitiçaria sombria. Cada elemento cromático possui função narrativa e mecânica: tons abissais para o reino dos mortos, roxo para a corrupção do véu e ouro antigo para a centelha de magia pura.
         </p>
 
-        <!-- Divisor Ornamental com Gemas -->
-        <img src="Imagens/UI_Magos_Assets_NULL/14_divisor_gemas.png" alt="Divisor de Gemas" class="ornate-gems-divider" />
-
         <!-- Paleta de Cores Interativa -->
-        <h3 class="section-subtitle">Paleta de Cores Oficial do Projeto (Clique para Copiar o HEX)</h3>
+        <h3 class="section-subtitle">Paleta Cromática Oficial (Clique em Qualquer Cor para Copiar o Código HEX)</h3>
         <div class="color-palette-showcase">
-          <div class="swatch-card">
+          <div class="swatch-card tilt-target" data-hex="#07040d">
             <div class="swatch-color" style="background:#07040d;"></div>
             <div class="swatch-info">
               <div class="swatch-name">Fundo Abissal</div>
@@ -148,7 +163,7 @@
             </div>
           </div>
 
-          <div class="swatch-card">
+          <div class="swatch-card tilt-target" data-hex="#c9a227">
             <div class="swatch-color" style="background:#c9a227;"></div>
             <div class="swatch-info">
               <div class="swatch-name">Ouro Arcano</div>
@@ -156,7 +171,7 @@
             </div>
           </div>
 
-          <div class="swatch-card">
+          <div class="swatch-card tilt-target" data-hex="#8a65ce">
             <div class="swatch-color" style="background:#8a65ce;"></div>
             <div class="swatch-info">
               <div class="swatch-name">Roxo Corrupção</div>
@@ -164,7 +179,7 @@
             </div>
           </div>
 
-          <div class="swatch-card">
+          <div class="swatch-card tilt-target" data-hex="#ff4d24">
             <div class="swatch-color" style="background:#ff4d24;"></div>
             <div class="swatch-info">
               <div class="swatch-name">Chama Ignis</div>
@@ -172,7 +187,7 @@
             </div>
           </div>
 
-          <div class="swatch-card">
+          <div class="swatch-card tilt-target" data-hex="#38bdf8">
             <div class="swatch-color" style="background:#38bdf8;"></div>
             <div class="swatch-info">
               <div class="swatch-name">Geada Nivor</div>
@@ -180,7 +195,7 @@
             </div>
           </div>
 
-          <div class="swatch-card">
+          <div class="swatch-card tilt-target" data-hex="#4ade80">
             <div class="swatch-color" style="background:#4ade80;"></div>
             <div class="swatch-info">
               <div class="swatch-name">Pestilência Mortis</div>
@@ -189,348 +204,438 @@
           </div>
         </div>
 
-        <!-- Galeria dos Magos com as Molduras Douradas Autênticas -->
-        <h3 class="section-subtitle">Os Três Magos & Seus Selos Elementais</h3>
+        <!-- Divisor Ornamental com Gemas -->
+        <img src="Imagens/UI_Magos_Assets_NULL/14_divisor_gemas.png" alt="Divisor de Gemas" class="ornate-gems-divider" />
+
+        <!-- Galeria dos Magos com 3D Parallax Tilt -->
+        <h3 class="section-subtitle">Os Três Magos & Suas Afinidades Elementais (Passe o Mouse nos Cards)</h3>
+        
         <div class="magos-gallery">
           
           <!-- IGNIS -->
-          <div class="mago-visual-card ignis">
+          <div class="mago-visual-card ignis tilt-target" data-mago="ignis">
             <div class="mago-portrait-stage">
-              <img src="Imagens/UI_Magos_Assets_NULL/IGNIS_Moldura.png" alt="Moldura Dourada Ignis" class="moldura-bg" />
+              <img src="Imagens/UI_Magos_Assets_NULL/IGNIS_Moldura.png" alt="Moldura Ignis" class="moldura-bg" />
               <img src="Imagens/UI_Magos_Assets_NULL/IGNIS_Mago.png" alt="Ignis Mago da Chama" class="mago-art" />
-              <div class="mago-badge-elem" style="color:#ff5e36">🔥 Selo da Chama</div>
+              <div class="mago-badge-elem elem-fire">Selo da Chama</div>
             </div>
             <div class="mago-details">
               <h4>IGNIS</h4>
-              <div class="mago-seal-title">O Mago da Chama</div>
+              <div class="mago-seal-title">Mago da Chama</div>
               <ul class="mago-spec-list">
-                <li><strong>Estilo:</strong> Dano massivo direto, explosões e Queimadura.</li>
-                <li><strong>Passiva:</strong> <em>Intensidade da Chama</em> (+dano quanto menor a vida).</li>
-                <li><strong>Magias:</strong> Faísca, Chama Crescente, Manto de Brasas, Inferno Arcano.</li>
+                <li><strong>Estilo:</strong> Dano massivo direto e Queimadura.</li>
+                <li><strong>Passiva:</strong> <em>Intensidade da Chama</em> (+dano com vida baixa).</li>
+                <li><strong>Arsenal:</strong> Faísca, Chama Crescente, Manto de Brasas, Inferno Arcano.</li>
               </ul>
             </div>
           </div>
 
           <!-- NIVOR -->
-          <div class="mago-visual-card nivor">
+          <div class="mago-visual-card nivor tilt-target" data-mago="nivor">
             <div class="mago-portrait-stage">
-              <img src="Imagens/UI_Magos_Assets_NULL/NIVOR_Moldura.png" alt="Moldura Dourada Nivor" class="moldura-bg" />
+              <img src="Imagens/UI_Magos_Assets_NULL/NIVOR_Moldura.png" alt="Moldura Nivor" class="moldura-bg" />
               <img src="Imagens/UI_Magos_Assets_NULL/NIVOR_Mago.png" alt="Nivor Mago da Geada" class="mago-art" />
-              <div class="mago-badge-elem" style="color:#38bdf8">❄️ Selo da Geada</div>
+              <div class="mago-badge-elem elem-frost">Selo da Geada</div>
             </div>
             <div class="mago-details">
               <h4>NIVOR</h4>
-              <div class="mago-seal-title">O Mago da Geada</div>
+              <div class="mago-seal-title">Mago da Geada</div>
               <ul class="mago-spec-list">
-                <li><strong>Estilo:</strong> Controle de grupo, escudos arcanos e Congelamento.</li>
-                <li><strong>Passiva:</strong> <em>Espessura do Gelo</em> (+defesa acumulativa a cada bloqueio).</li>
-                <li><strong>Magias:</strong> Estilhaço de Gelo, Prisão Glacial, Barreira de Nivor, Zero Absoluto.</li>
+                <li><strong>Estilo:</strong> Controle de grupo, barreiras e Congelamento.</li>
+                <li><strong>Passiva:</strong> <em>Espessura do Gelo</em> (+armadura acumulativa).</li>
+                <li><strong>Arsenal:</strong> Estilhaço de Gelo, Prisão Glacial, Barreira, Zero Absoluto.</li>
               </ul>
             </div>
           </div>
 
           <!-- MORTIS -->
-          <div class="mago-visual-card mortis">
+          <div class="mago-visual-card mortis tilt-target" data-mago="mortis">
             <div class="mago-portrait-stage">
-              <img src="Imagens/UI_Magos_Assets_NULL/MORTIS_Moldura.png" alt="Moldura Dourada Mortis" class="moldura-bg" />
+              <img src="Imagens/UI_Magos_Assets_NULL/MORTIS_Moldura.png" alt="Moldura Mortis" class="moldura-bg" />
               <img src="Imagens/UI_Magos_Assets_NULL/MORTIS_Mago.png" alt="Mortis Mago da Pestilência" class="mago-art" />
-              <div class="mago-badge-elem" style="color:#4ade80">☠️ Selo da Pestilência</div>
+              <div class="mago-badge-elem elem-poison">Selo da Pestilência</div>
             </div>
             <div class="mago-details">
               <h4>MORTIS</h4>
-              <div class="mago-seal-title">O Mago da Pestilência</div>
+              <div class="mago-seal-title">Mago da Pestilência</div>
               <ul class="mago-spec-list">
-                <li><strong>Estilo:</strong> Dreno de vida, acúmulo de Veneno e enfraquecimento.</li>
-                <li><strong>Passiva:</strong> <em>Carga Necrótica</em> (+poder conforme os status do alvo).</li>
-                <li><strong>Magias:</strong> Toque Pútrido, Nuvem Tóxica, Pacto Fúnebre, Colheita de Almas.</li>
+                <li><strong>Estilo:</strong> Dreno vital, Veneno e debuffs contínuos.</li>
+                <li><strong>Passiva:</strong> <em>Carga Necrótica</em> (+poder pelos status do alvo).</li>
+                <li><strong>Arsenal:</strong> Toque Pútrido, Nuvem Tóxica, Pacto Fúnebre, Colheita.</li>
               </ul>
             </div>
           </div>
 
         </div>
 
-        <!-- Chefes e Rotas de Mapa -->
-        <h3 class="section-subtitle">Os Três Chefes de Mapa & Ambientações</h3>
+        <!-- ================================================================
+             GRIMÓRIO INTERATIVO DE MAGIAS (SHOWCASE EXPANSÍVEL)
+             ================================================================ -->
+        <div class="spellbook-showcase-panel">
+          <div class="spellbook-header">
+            <div class="spellbook-title-wrap">
+              <span class="badge-gem">✦</span>
+              <h3>Grimório Arcano · Inspeção de Feitiços</h3>
+            </div>
+            <div class="spellbook-mago-tabs">
+              <button class="btn-spell-tab active" data-tab-mago="ignis" onclick="switchSpellbookMago('ignis')">Ignis (Chama)</button>
+              <button class="btn-spell-tab" data-tab-mago="nivor" onclick="switchSpellbookMago('nivor')">Nivor (Geada)</button>
+              <button class="btn-spell-tab" data-tab-mago="mortis" onclick="switchSpellbookMago('mortis')">Mortis (Pestilência)</button>
+            </div>
+          </div>
+
+          <div class="spellbook-body">
+            <div id="spellbook-grid" class="spellbook-cards-grid">
+              <!-- Preenchido dinamicamente via JS com animações de feitiço -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Chefes de Rota com Parallax -->
+        <h3 class="section-subtitle" style="margin-top: 3rem;">Os Três Chefes de Rota & Ambientações</h3>
         <div class="grid-3">
-          <div class="boss-card">
+          <div class="boss-card tilt-target">
             <div class="boss-img-wrap">
-              <img src="Imagens/battle/forja-rubra-background.png" alt="Forja Rubra" class="boss-bg-scene" />
+              <img src="Imagens/battle/forja-rubra-background.png" alt="Cenário Forja Rubra" class="boss-bg-scene" />
               <img src="Imagens/bosses/general-de-cinzas/signature.png" alt="General de Cinzas" class="boss-sprite-main" />
             </div>
             <div class="boss-info">
               <h4>General de Cinzas</h4>
-              <span class="boss-map-tag">🔥 Rota da Chama · Forja Rubra</span>
-              <p>Monstro encouraçado em magma que entra em frenesi explosivo ao cair abaixo de 50% de HP.</p>
+              <span class="boss-map-tag tag-fire">Rota da Chama · Forja Rubra</span>
+              <p>Colosso couraçado em placas de magma que entra em frenesi explosivo ao cair abaixo de 50% de HP.</p>
             </div>
           </div>
 
-          <div class="boss-card">
+          <div class="boss-card tilt-target">
             <div class="boss-img-wrap">
-              <img src="Imagens/battle/mina-de-cristal-background.png" alt="Mina de Cristal" class="boss-bg-scene" />
+              <img src="Imagens/battle/mina-de-cristal-background.png" alt="Cenário Mina de Cristal" class="boss-bg-scene" />
               <img src="Imagens/bosses/vigia-congelado/signature.png" alt="Vigia Congelado" class="boss-sprite-main" />
             </div>
             <div class="boss-info">
               <h4>Vigia Congelado</h4>
-              <span class="boss-map-tag">❄️ Rota da Geada · Mina de Cristal</span>
-              <p>Entidade de gelo milenar que congela o solo e invoca estalactites pontiagudas perfurantes.</p>
+              <span class="boss-map-tag tag-frost">Rota da Geada · Mina de Cristal</span>
+              <p>Entidade ancestral de gelo que congela a arena de combate e invoca estalactites perfurantes.</p>
             </div>
           </div>
 
-          <div class="boss-card">
+          <div class="boss-card tilt-target">
             <div class="boss-img-wrap">
-              <img src="Imagens/battle/cemiterio-torcido-background.png" alt="Cemitério Torcido" class="boss-bg-scene" />
+              <img src="Imagens/battle/cemiterio-torcido-background.png" alt="Cenário Cemitério Torcido" class="boss-bg-scene" />
               <img src="Imagens/bosses/colosso-decomposto/signature.png" alt="Colosso Decomposto" class="boss-sprite-main" />
             </div>
             <div class="boss-info">
               <h4>Colosso Decomposto</h4>
-              <span class="boss-map-tag">☠️ Rota da Pestilência · Cemitério Torcido</span>
-              <p>Amálgama gigante de ossos e miasma pútrido que drena vida e infecta o mago com veneno.</p>
+              <span class="boss-map-tag tag-poison">Rota da Pestilência · Cemitério Torcido</span>
+              <p>Amálgama de ossos e miasma tóxico que infecta o conjurador com veneno acumulativo e drena sua vida.</p>
             </div>
           </div>
         </div>
 
         <!-- Desafio de Design Multiplataforma -->
-        <div class="key-question-box">
+        <div class="key-question-box tilt-target">
           <div class="key-question-header">
-            <span style="font-size:2rem;">🎨</span>
+            <div class="key-icon-badge">❖</div>
             <h3>Desafio de Design: Coerência Visual Multiplataforma</h3>
           </div>
-          <p style="font-size: 1.05rem; line-height: 1.7; color: #f3e8ff;">
-            <strong>Harmonia visual entre interfaces:</strong> Transpusemos a mesma identidade sombria entre o <em>Terminal Console</em> (paleta ANSI 24-bit e molduras Unicode), o <em>Windows Forms</em> (bitmaps GDI+ de alta resolução) e a <em>Web 2D (Blazor / Phaser)</em> (animações e spritesheets recortados pixel a pixel). O jogador vivencia o mesmo universo em qualquer tela.
+          <p class="key-question-body">
+            O principal desafio visual do projeto foi manter a mesma atmosfera sombria entre três interfaces completamente distintas: no <strong>Terminal de Console</strong> (utilizando paleta ANSI de 24-bit e molduras Unicode), no <strong>Windows Forms</strong> (layouts GDI+ com resolução nativa) e no <strong>Navegador Web</strong> (spritesheets animados e efeitos de partículas). O jogador experimenta a mesma identidade visual independente da plataforma.
           </p>
         </div>
       </section>
 
       <!-- ------------------------------------------------------------------
-           BLOCO 03: MECÂNICAS DE COMBATE & EXPLORAÇÃO
+           SEÇÃO 03: MECÂNICAS DE COMBATE & EXPLORAÇÃO INTERATIVA
            ------------------------------------------------------------------ -->
-      <section id="bloco-3" class="presentation-section" data-block-number="3">
+      <section id="bloco-3" class="presentation-section reveal-item" data-block-number="3">
         <div class="section-header-wrap">
           <div>
-            <div class="section-tag">✦ Bloco 03 · Sistema de Combate</div>
+            <div class="section-tag">03 · Sistemas de Combate</div>
             <h2 class="section-title">Mecânicas de Combate & Exploração</h2>
           </div>
           <div class="section-meta-pills">
-            <div class="meta-pill">⚔️ <strong>4 Mecânicas Chave em Destaque</strong></div>
+            <div class="meta-pill">
+              <span class="pill-dot"></span>
+              <strong>Pilares:</strong> Triângulo Elemental, Status & Fases de Chefe
+            </div>
           </div>
         </div>
 
-        <!-- Grid das 4 Mecânicas Chave -->
+        <!-- Grid dos 4 Pilares de Combate -->
         <div class="grid-4" style="margin-bottom: 2.5rem;">
           
-          <div class="ref-card" style="border-top: 4px solid #ff4d24;">
-            <div class="ref-icon">🔥</div>
-            <h4>1. Triângulo Elemental</h4>
-            <p><strong>Fogo vence Pestilência (1.5x)</strong>, <strong>Pestilência vence Geada (1.5x)</strong> e <strong>Geada vence Fogo (1.5x)</strong>. Se atingir o elemento desfavorável, o dano cai para 0.75x.</p>
+          <div class="pillar-card border-fire tilt-target">
+            <div class="pillar-header">
+              <span class="pillar-number">01</span>
+              <h4>Triângulo Elemental</h4>
+            </div>
+            <p><strong>Fogo supera Pestilência (1.5x)</strong>, <strong>Pestilência supera Geada (1.5x)</strong> e <strong>Geada supera Fogo (1.5x)</strong>. Se o elemento for desfavorável, o dano cai para 0.75x.</p>
           </div>
 
-          <div class="ref-card" style="border-top: 4px solid #8a65ce;">
-            <div class="ref-icon">⚡</div>
-            <h4>2. Estados Alterados</h4>
-            <p>Objetos polimórficos de status: <em>Queimadura</em> (dano por rodada), <em>Congelamento</em> (perda de ação) e <em>Veneno</em> (dano cumulativo progressivo).</p>
+          <div class="pillar-card border-purple tilt-target">
+            <div class="pillar-header">
+              <span class="pillar-number">02</span>
+              <h4>Estados Alterados</h4>
+            </div>
+            <p>Efeitos de status dinâmicos: <strong>Queimadura</strong> (dano direto por turno), <strong>Congelamento</strong> (perda do turno de ação) e <strong>Veneno</strong> (dano cumulativo progressivo).</p>
           </div>
 
-          <div class="ref-card" style="border-top: 4px solid #c9a227;">
-            <div class="ref-icon">✨</div>
-            <h4>3. Passivas Únicas</h4>
-            <p>Cálculos exclusivos: Ignis bate mais forte com vida baixa, Nivor acumula barreira de gelo e Mortis drena poder dos status no adversário.</p>
+          <div class="pillar-card border-gold tilt-target">
+            <div class="pillar-header">
+              <span class="pillar-number">03</span>
+              <h4>Passivas de Herói</h4>
+            </div>
+            <p>Lógica própria para cada mago: Ignis ganha dano em estado crítico, Nivor ergue armadura ao defender e Mortis potencializa seus feitiços pelos debuffs do alvo.</p>
           </div>
 
-          <div class="ref-card" style="border-top: 4px solid #38bdf8;">
-            <div class="ref-icon">👹</div>
-            <h4>4. Transição de Chefes</h4>
-            <p>Ao cair abaixo de 50% de vida, cada chefe entra em modo de fúria, alterando o padrão da IA e telegrafando ataques devastadores.</p>
+          <div class="pillar-card border-frost tilt-target">
+            <div class="pillar-header">
+              <span class="pillar-number">04</span>
+              <h4>Transição de Fases</h4>
+            </div>
+            <p>Ao atingir menos de 50% de HP, o chefe entra em modo de fúria, alterando o padrão da árvore de decisão da IA e telegrafando ataques em área devastadores.</p>
           </div>
 
+        </div>
+
+        <!-- ================================================================
+             RODA ELEMENTAL INTERATIVA (TESTADOR DE SINERGIAS E FRAQUEZAS)
+             ================================================================ -->
+        <div class="elemental-triad-container">
+          <div class="triad-header">
+            <div>
+              <div class="badge-highlight">Sistemas de Combate em Tempo Real</div>
+              <h3 class="triad-title">Roda Elemental Interativa · Matriz de Fraquezas</h3>
+              <p class="triad-subtitle">Selecione o elemento do Conjurador e do Alvo para simular o multiplicador de dano e os status aplicados.</p>
+            </div>
+          </div>
+
+          <div class="triad-interactive-stage">
+            <!-- Seletor do Conjurador -->
+            <div class="triad-column">
+              <div class="triad-col-title">1. Elemento do Conjurador</div>
+              <div class="triad-element-buttons">
+                <button class="btn-element-pick fire active" onclick="setAttackerElement('fogo')">
+                  <span class="element-icon">🔥</span>
+                  <span>Chama (Fogo)</span>
+                </button>
+                <button class="btn-element-pick frost" onclick="setAttackerElement('gelo')">
+                  <span class="element-icon">❄️</span>
+                  <span>Geada (Gelo)</span>
+                </button>
+                <button class="btn-element-pick poison" onclick="setAttackerElement('pestilencia')">
+                  <span class="element-icon">☠️</span>
+                  <span>Pestilência (Veneno)</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Centro: Animação e Multiplicador -->
+            <div class="triad-center-display">
+              <div class="triad-flow-graphic">
+                <div id="triad-orb-attacker" class="triad-orb elem-fire">🔥</div>
+                <div class="triad-energy-beam">
+                  <span id="triad-beam-arrow" class="beam-pulse">➔ ➔ ➔</span>
+                </div>
+                <div id="triad-orb-target" class="triad-orb elem-poison">☠️</div>
+              </div>
+              <div id="triad-result-badge" class="triad-result-badge advantage">
+                1.5x Dano Crítico (Vantagem)
+              </div>
+              <div id="triad-status-result" class="triad-status-result">
+                Aplica Queimadura (+15 de dano puro por turno)
+              </div>
+            </div>
+
+            <!-- Seletor do Alvo -->
+            <div class="triad-column">
+              <div class="triad-col-title">2. Elemento do Inimigo</div>
+              <div class="triad-element-buttons">
+                <button class="btn-element-pick fire" onclick="setTargetElement('fogo')">
+                  <span class="element-icon">🔥</span>
+                  <span>Chama (Fogo)</span>
+                </button>
+                <button class="btn-element-pick frost" onclick="setTargetElement('gelo')">
+                  <span class="element-icon">❄️</span>
+                  <span>Geada (Gelo)</span>
+                </button>
+                <button class="btn-element-pick poison active" onclick="setTargetElement('pestilencia')">
+                  <span class="element-icon">☠️</span>
+                  <span>Pestilência (Veneno)</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Divisor Ornamental Dourado -->
         <img src="Imagens/UI_Magos_Assets_NULL/12_divisor_dourado_01.png" alt="Divisor Dourado" class="ornate-gold-divider" />
 
-        <!-- Showcase das Rotas de Exploração -->
+        <!-- ================================================================
+             INSPETOR INTERATIVO DE ROTAS DE MAPA COM HOTSPOTS
+             ================================================================ -->
         <h3 class="section-subtitle">Rotas & Exploração de Mapa em Grade</h3>
-        <div class="grid-3">
-          <div class="panel-arcane" style="padding:0.85rem; border-color:rgba(74,222,128,0.4);">
-            <img src="Imagens/gui/mapa-cemiterio-hd.png" alt="Cemitério Torcido" style="width:100%; height:200px; object-fit:cover; border-radius:4px; margin-bottom:0.75rem;" />
-            <h4 style="font-family:var(--font-title); font-size:1.1rem; color:#4ade80;">Cemitério Torcido</h4>
-            <p style="font-size:0.85rem; color:var(--text-parchment-dim);">Terrenos pantanosos, névoas venenosas e o temido Colosso Decomposto.</p>
+        
+        <div class="route-explorer-container">
+          <div class="route-selector-tabs">
+            <button class="btn-route-tab active" data-route="cemiterio" onclick="switchRoute('cemiterio')">
+              <span>☠️ Cemitério Torcido</span>
+            </button>
+            <button class="btn-route-tab" data-route="mina" onclick="switchRoute('mina')">
+              <span>❄️ Mina de Cristal</span>
+            </button>
+            <button class="btn-route-tab" data-route="forja" onclick="switchRoute('forja')">
+              <span>🔥 Forja Rubra</span>
+            </button>
           </div>
 
-          <div class="panel-arcane" style="padding:0.85rem; border-color:rgba(56,189,248,0.4);">
-            <img src="Imagens/gui/mapa-vila-hd.png" alt="Mina de Cristal" style="width:100%; height:200px; object-fit:cover; border-radius:4px; margin-bottom:0.75rem;" />
-            <h4 style="font-family:var(--font-title); font-size:1.1rem; color:#38bdf8;">Mina de Cristal</h4>
-            <p style="font-size:0.85rem; color:var(--text-parchment-dim);">Geadas perpétuas, quartzo arcano cortante e o Vigia Congelado.</p>
-          </div>
+          <div class="route-viewer-card">
+            <div class="route-map-viewport">
+              <img id="route-active-map-img" src="Imagens/gui/mapa-cemiterio-hd.png" alt="Mapa da Rota" class="route-main-map" />
+              
+              <!-- Hotspots Interativos Pulsantes no Mapa -->
+              <div class="map-hotspots-overlay" id="map-hotspots-container">
+                <!-- Preenchido via JS conforme a rota selecionada -->
+              </div>
+            </div>
 
-          <div class="panel-arcane" style="padding:0.85rem; border-color:rgba(255,77,36,0.4);">
-            <img src="Imagens/gui/mapa-fortaleza-hd.png" alt="Forja Rubra" style="width:100%; height:200px; object-fit:cover; border-radius:4px; margin-bottom:0.75rem;" />
-            <h4 style="font-family:var(--font-title); font-size:1.1rem; color:#ff5e36;">Forja Rubra</h4>
-            <p style="font-size:0.85rem; color:var(--text-parchment-dim);">Fortaleza vulcânica, rios de lava e o titânico General de Cinzas.</p>
+            <!-- Painel Informativo da Rota e Hotspot Ativo -->
+            <div class="route-info-sidebar">
+              <div class="badge-highlight" id="route-tag-label">Rota da Pestilência</div>
+              <h4 id="route-name-title" class="route-sidebar-title">Cemitério Torcido</h4>
+              <p id="route-desc-text" class="route-sidebar-desc">
+                Pântanos sombrios cobertos de névoas miasmáticas. Os arcanistas enfrentam esqueletos reanimados até o confronto final com o Colosso Decomposto.
+              </p>
+
+              <div class="route-quick-stats">
+                <div class="stat-pill">
+                  <span class="stat-label">Chefe da Rota:</span>
+                  <strong id="route-boss-name">Colosso Decomposto</strong>
+                </div>
+                <div class="stat-pill">
+                  <span class="stat-label">Fraqueza Recomendada:</span>
+                  <strong id="route-element-rec" style="color:#ff5e36;">Fogo (Ignis)</strong>
+                </div>
+                <div class="stat-pill">
+                  <span class="stat-label">Perigo Ambiental:</span>
+                  <strong id="route-hazard-desc">Névoa de Miasma (Dano Contínuo)</strong>
+                </div>
+              </div>
+
+              <div class="hotspot-detail-box" id="hotspot-active-detail">
+                <span class="hotspot-hint">Passe o mouse ou clique nos pontos dourados do mapa para inspecionar cada nó da jornada.</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       <!-- ------------------------------------------------------------------
-           BLOCO 04: DO CONCEITO AO JOGO — ARQUITETURA POO
+           SEÇÃO 04: ARQUITETURA DE SOFTWARE & POO
            ------------------------------------------------------------------ -->
-      <section id="bloco-4" class="presentation-section" data-block-number="4">
+      <section id="bloco-4" class="presentation-section reveal-item" data-block-number="4">
         <div class="section-header-wrap">
           <div>
-            <div class="section-tag">✦ Bloco 04 · Engenharia de Software</div>
-            <h2 class="section-title">Do Conceito ao Jogo: Arquitetura POO</h2>
+            <div class="section-tag">04 · Engenharia de Software</div>
+            <h2 class="section-title">Arquitetura de Domínio & POO</h2>
           </div>
           <div class="section-meta-pills">
-            <div class="meta-pill">💡 <strong>Princípios Sólidos de POO</strong></div>
+            <div class="meta-pill">
+              <span class="pill-dot"></span>
+              <strong>Linguagem:</strong> C# .NET 8 · Arquitetura Limpa
+            </div>
           </div>
         </div>
 
         <div class="section-quote">
-          "O Princípio Fundamental da Modelagem: 'Todo participante do combate compartilha o mesmo molde comum: todos têm vida, defesa e capacidade de agir. O que muda é como cada um ataca e reage às leis do jogo.'"
+          "Princípio de Modelagem: Todo participante do combate compartilha o mesmo contrato base — vida, defesa e capacidade de agir. A especialização reside na forma como cada classe calcula seus efeitos e reage aos estímulos do jogo."
         </div>
 
-        <div class="poo-architecture-grid">
+        <!-- ================================================================
+             INSPETOR INTERATIVO DE CLASSES C# E ARQUITETURA
+             ================================================================ -->
+        <div class="poo-interactive-inspector">
           
-          <!-- Hierarquia e Polimorfismo -->
-          <div class="panel-arcane">
-            <h3 class="section-subtitle">Hierarquia de Classes & Polimorfismo Real</h3>
-
-            <div style="background:#140d22; border:1px solid rgba(201,162,39,0.3); border-radius:6px; padding:1.2rem; margin-bottom:1rem;">
-              <div style="font-family:var(--font-title); font-size:1.15rem; color:#fff; margin-bottom:0.4rem;">
-                🏛️ Classe Abstrata Base: <span style="color:#c9a227;">Personagem</span>
-              </div>
-              <p style="font-size:0.88rem; color:var(--text-parchment-dim); margin-bottom:0.6rem;">
-                Centraliza vida, velocidade, defesa, cálculo de dano recebido e a lista polimórfica de <code>EfeitoEstado</code>.
-              </p>
-              
-              <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:0.8rem;">
-                <div style="background:#07040d; border:1px solid #8a65ce; border-radius:4px; padding:0.85rem;">
-                  <strong style="color:#d8b4fe; font-size:0.9rem;">🧙 Mago (Herança)</strong>
-                  <ul style="font-size:0.82rem; margin-top:0.35rem; padding-left:1.1rem; color:var(--text-parchment);">
-                    <li>Gerencia Mana e Níveis (1 a 30)</li>
-                    <li>Lista de <code>Habilidade</code> e <code>Item</code></li>
-                    <li>Especializações: Ignis, Nivor, Mortis</li>
-                  </ul>
-                </div>
-
-                <div style="background:#07040d; border:1px solid #ef4444; border-radius:4px; padding:0.85rem;">
-                  <strong style="color:#fca5a5; font-size:0.9rem;">👹 Inimigo (Herança)</strong>
-                  <ul style="font-size:0.82rem; margin-top:0.35rem; padding-left:1.1rem; color:var(--text-parchment);">
-                    <li>IA de Ação: <code>DecidirAcao()</code></li>
-                    <li>Entrega de Recompensas e XP</li>
-                    <li>Monstros Comuns e Chefes de Fase</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Interfaces Transversais -->
-            <div style="background:#140d22; border:1px solid rgba(138,101,206,0.4); border-radius:6px; padding:1.2rem;">
-              <div style="font-family:var(--font-title); font-size:1.05rem; color:#d8b4fe; margin-bottom:0.4rem;">
-                ⚡ Interfaces Transversais (Polimorfismo sem Ancestral Comum)
-              </div>
-              <ul style="font-size:0.85rem; color:var(--text-parchment); display:flex; flex-direction:column; gap:0.4rem;">
-                <li><code>IUsavel</code>: Implementada por <strong>Habilidade</strong> e por <strong>Item</strong> (sem classe pai comum).</li>
-                <li><code>IRecompensavel</code>: Implementada por <strong>Inimigo</strong> e por <strong>BauArcano</strong>.</li>
-                <li><code>IControladorTurno</code>: Desacopla as ações do Jogador humano e do Robô/IA do motor de turnos.</li>
-              </ul>
-            </div>
+          <div class="poo-tabs-bar">
+            <button class="btn-poo-tab active" data-poo="personagem" onclick="switchPooTab('personagem')">1. Classe Base (Personagem)</button>
+            <button class="btn-poo-tab" data-poo="mago" onclick="switchPooTab('mago')">2. Mago (Especialização)</button>
+            <button class="btn-poo-tab" data-poo="inimigo" onclick="switchPooTab('inimigo')">3. Inimigo (IA de Decisão)</button>
+            <button class="btn-poo-tab" data-poo="interfaces" onclick="switchPooTab('interfaces')">4. Interfaces (IUsavel / IRecompensavel)</button>
+            <button class="btn-poo-tab" data-poo="camadas" onclick="switchPooTab('camadas')">5. Arquitetura 3 Camadas</button>
           </div>
 
-          <!-- Separação de Camadas -->
-          <div>
-            <h3 class="section-subtitle">Arquitetura Limpa em 3 Camadas</h3>
-
-            <div class="clean-layers-box">
-              <div class="layer-card ui">
-                <div class="layer-title">
-                  <span>Apresentação (Frontends)</span>
-                  <small>Console · WinForms · Web</small>
-                </div>
-                <div class="layer-desc">Conhecem apenas os contratos e interfaces. Não possuem nenhuma regra de negócio embutida.</div>
-              </div>
-
-              <div class="layer-card rules">
-                <div class="layer-title">
-                  <span>Regras & Serviços</span>
-                  <small>MotorTurnos · Campanha · ServicoCombate</small>
-                </div>
-                <div class="layer-desc">Orquestra turnos, calcula fraquezas elementais e gerencia o salvamento e progressão.</div>
-              </div>
-
-              <div class="layer-card core">
-                <div class="layer-title">
-                  <span>Domínio Puro (Core)</span>
-                  <small>Personagem · Mago · Inimigos · Efeitos</small>
-                </div>
-                <div class="layer-desc">Zero dependências de tela. 100% testável isoladamente sem formulários ou console.</div>
-              </div>
-            </div>
-
-            <div class="panel-arcane" style="margin-top:1.2rem; border-color:rgba(201,162,39,0.5);">
-              <h4 style="font-family:var(--font-title); font-size:1rem; color:var(--gold-glow); margin-bottom:0.3rem;">
-                ✂️ Decisão de Engenharia: Corte Consciente de Escopo
-              </h4>
-              <p style="font-size:0.85rem; color:var(--text-parchment);">
-                "No GDD inicial tínhamos 11 mapas e dezenas de magias. Reduzir para 3 rotas completas e balanceadas (Cemitério, Mina e Forja) foi uma <strong>decisão madura de projeto</strong> para garantir estabilidade absoluta e polimento visual na entrega final."
-              </p>
-            </div>
+          <div class="poo-inspector-content" id="poo-inspector-display">
+            <!-- Conteúdo dinâmico preenchido via JS com trechos de código C# e explicações -->
           </div>
 
+        </div>
+
+        <!-- Decisão de Foco e Escopo -->
+        <div class="panel-arcane scope-decision-box tilt-target" style="margin-top: 2rem;">
+          <h4 class="scope-title">
+            Decisão de Engenharia: Foco e Balanceamento de Escopo
+          </h4>
+          <p class="scope-text">
+            O documento inicial previa 11 mapas procedurais. A decisão de consolidar o escopo em <strong>3 rotas completas, balanceadas e com identidade única</strong> (Cemitério, Mina e Forja) garantiu que cada rota tivesse arte dedicada, mecânicas polidas e estabilidade absoluta no motor de combate.
+          </p>
         </div>
       </section>
 
       <!-- ------------------------------------------------------------------
-           BLOCO 05: COMO FOI O PROCESSO
+           SEÇÃO 05: RETROSPECTIVA & DESAFIOS TÉCNICOS
            ------------------------------------------------------------------ -->
-      <section id="bloco-5" class="presentation-section" data-block-number="5">
+      <section id="bloco-5" class="presentation-section reveal-item" data-block-number="5">
         <div class="section-header-wrap">
           <div>
-            <div class="section-tag">✦ Bloco 05 · Retrospectiva & Processo</div>
-            <h2 class="section-title">Como foi o Processo do Grupo</h2>
+            <div class="section-tag">05 · Retrospectiva Técnica</div>
+            <h2 class="section-title">Processo de Desenvolvimento & Desafios</h2>
           </div>
           <div class="section-meta-pills">
-            <div class="meta-pill">🛡️ <strong>Maturidade e Aprendizados de Engenharia</strong></div>
+            <div class="meta-pill">
+              <span class="pill-dot"></span>
+              <strong>Balanço:</strong> Acertos, Obstáculos Superados e Evolução
+            </div>
           </div>
         </div>
 
-        <p style="font-size:1.1rem; margin-bottom:1.5rem;">
-          Transparência técnica: um balanço sincero do que funcionou, onde o projeto demandou mais esforço e o que aprendemos durante o desenvolvimento.
+        <p class="section-lead-text">
+          Um relato técnico transparente sobre o fluxo de trabalho do grupo, os obstáculos enfrentados durante a integração multiplataforma e os aprendizados consolidados.
         </p>
 
         <div class="grid-3">
           
           <!-- O que Funcionou -->
-          <div class="retro-card success">
+          <div class="retro-card success tilt-target">
             <div class="retro-title">
-              <span>✅</span> O que Funcionou Muito Bem
+              <span class="status-indicator-dot green"></span> O que Funcionou Muito Bem
             </div>
             <ul class="retro-list">
-              <li><strong>Separação de Camadas:</strong> A biblioteca central <code>ArcaneDead</code> permitiu que um membro fizesse a Web enquanto outro refinava o Console e o balanceamento.</li>
-              <li><strong>Ciclo Elemental Balanceado:</strong> O triângulo Fogo-Gelo-Pestilência garantiu variedade tática sem estratégia invencível.</li>
-              <li><strong>Git & Branches:</strong> Organização por branches impediu perdas de código.</li>
+              <li><strong>Desacoplamento em Camadas:</strong> A biblioteca central <code>ArcaneDead.Core</code> permitiu o desenvolvimento simultâneo da interface Web e do motor de console sem conflitos de merge.</li>
+              <li><strong>Ciclo de Fraquezas Balanceado:</strong> A matriz elemental triangular eliminou estratégias dominantes e incentivou a alternância de magos.</li>
+              <li><strong>Versionamento no Git:</strong> Estrutura de branches por funcionalidade manteve a integridade do código durante todo o ciclo.</li>
             </ul>
           </div>
 
-          <!-- O que Quebrou / Subestimamos -->
-          <div class="retro-card challenge">
+          <!-- Desafios Superados -->
+          <div class="retro-card challenge tilt-target">
             <div class="retro-title">
-              <span>⚠️</span> O que Quebrou & Onde Travou
+              <span class="status-indicator-dot red"></span> Principais Desafios Técnicos
             </div>
             <ul class="retro-list">
-              <li><strong>Sincronização de Turnos:</strong> O console era síncrono; adaptar para animações assíncronas no Phaser exigiu refatoração de contratos.</li>
-              <li><strong>Recorte de Spritesheets:</strong> Ajustar frames de ataque, cast e morte para alinhar perfeitamente com a interface demandou muito tempo de arte.</li>
-              <li><strong>Estados Combinados:</strong> Múltiplos status simultâneos geraram casos de borda que foram corrigidos nos testes.</li>
+              <li><strong>Sincronização de Turnos Assíncronos:</strong> O motor de console operava de forma síncrona, enquanto a interface Web exigia animações e tempos de resposta assíncronos.</li>
+              <li><strong>Mapeamento de Spritesheets:</strong> Ajustar frames de ataque, conjuração e impacto com precisão de pixels demandou refatoração nos renderizadores.</li>
+              <li><strong>Cumulatividade de Status:</strong> Tratar interações complexas de múltiplos efeitos de estado simultâneos (ex: Queimadura + Congelamento) exigiu testes unitários dedicados.</li>
             </ul>
           </div>
 
-          <!-- O que Fariam com +2 Semanas -->
-          <div class="retro-card future">
+          <!-- Próximos Passos -->
+          <div class="retro-card future tilt-target">
             <div class="retro-title">
-              <span>🔮</span> O que Faríamos com +2 Semanas
+              <span class="status-indicator-dot blue"></span> Próximos Passos & Expansão
             </div>
             <ul class="retro-list">
-              <li><strong>Árvore de Talentos:</strong> Sistema de talentos permanentes desbloqueados com almas corrompidas.</li>
-              <li><strong>Nova Classe (Mago do Véu):</strong> Um quarto herói com elemento arcano neutro e magias de distorção temporal.</li>
-              <li><strong>Modo Cooperativo Local:</strong> Partidas em dupla contra hordas massivas.</li>
+              <li><strong>Árvore de Talentos Permanentes:</strong> Sistema de progressão meta-game com desbloqueio de passivas entre tentativas.</li>
+              <li><strong>Nova Classe (Mago do Véu):</strong> Quarto arcanista com elemento neutro e feitiços de distorção temporal.</li>
+              <li><strong>Modo Cooperativo Local:</strong> Suporte a batalhas em dupla compartilhando a mesma reserva de mana.</li>
             </ul>
           </div>
 
@@ -538,73 +643,86 @@
       </section>
 
       <!-- ------------------------------------------------------------------
-           BLOCO 06: EQUIPE DO PROJETO & FECHO
+           SEÇÃO 06: EQUIPE & CÓDIGO ABERTO
            ------------------------------------------------------------------ -->
-      <section id="bloco-6" class="presentation-section" data-block-number="6">
+      <section id="bloco-6" class="presentation-section reveal-item" data-block-number="6">
         <div class="section-header-wrap">
           <div>
-            <div class="section-tag">✦ Bloco 06 · Equipe do Projeto</div>
-            <h2 class="section-title">Integrantes do Projeto Arcane Dead</h2>
+            <div class="section-tag">06 · Equipe & Encerramento</div>
+            <h2 class="section-title">Integrantes do Projeto</h2>
           </div>
           <div class="section-meta-pills">
-            <div class="meta-pill">🧙‍♂️ <strong>Os Três Magos Criadores</strong></div>
+            <div class="meta-pill">
+              <span class="pill-dot"></span>
+              <strong>Equipe de Desenvolvimento</strong>
+            </div>
           </div>
         </div>
 
-        <!-- Cards Nominais dos Membros com a Foto de um Mago para Cada -->
+        <!-- Cards dos Membros com Efeito Tilt 3D -->
         <div class="grid-3">
           
-          <div class="member-card">
+          <div class="member-card tilt-target">
             <div class="member-avatar-wrap">
-              <img src="Imagens/UI_Magos_Assets_NULL/IGNIS_Mago.png" alt="Gabriel — Ignis" class="member-avatar-img" />
+              <img src="Imagens/UI_Magos_Assets_NULL/IGNIS_Mago.png" alt="Gabriel" class="member-avatar-img" />
             </div>
             <h4 class="member-name">Gabriel</h4>
-            <div class="mago-badge-elem" style="color:#ff5e36; justify-content:center; margin-top:0.75rem;">🔥 Ignis · Mago da Chama</div>
-          </div>
-
-          <div class="member-card">
-            <div class="member-avatar-wrap">
-              <img src="Imagens/UI_Magos_Assets_NULL/NIVOR_Mago.png" alt="Alex — Nivor" class="member-avatar-img" />
+            <div class="mago-badge-elem elem-fire member-elem-badge">Ignis · Mago da Chama</div>
+            <div class="member-contributions">
+              <p>Engenharia de combate, lógica de dano elemental, balanceamento numérico e testes de regras.</p>
             </div>
-            <h4 class="member-name">Alex</h4>
-            <div class="mago-badge-elem" style="color:#38bdf8; justify-content:center; margin-top:0.75rem;">❄️ Nivor · Mago da Geada</div>
           </div>
 
-          <div class="member-card">
+          <div class="member-card tilt-target">
             <div class="member-avatar-wrap">
-              <img src="Imagens/UI_Magos_Assets_NULL/MORTIS_Mago.png" alt="Gabriel — Mortis" class="member-avatar-img" />
+              <img src="Imagens/UI_Magos_Assets_NULL/NIVOR_Mago.png" alt="Alex" class="member-avatar-img" />
+            </div>
+            <h4 class="member-name">Alex Eduardo</h4>
+            <div class="mago-badge-elem elem-frost member-elem-badge">Nivor · Mago da Geada</div>
+            <div class="member-contributions">
+              <p>Arquitetura em camadas, interface Web 2D, renderização de sprites e integração do motor assíncrono.</p>
+            </div>
+          </div>
+
+          <div class="member-card tilt-target">
+            <div class="member-avatar-wrap">
+              <img src="Imagens/UI_Magos_Assets_NULL/MORTIS_Mago.png" alt="Gabriel" class="member-avatar-img" />
             </div>
             <h4 class="member-name">Gabriel</h4>
-            <div class="mago-badge-elem" style="color:#4ade80; justify-content:center; margin-top:0.75rem;">☠️ Mortis · Mago da Pestilência</div>
+            <div class="mago-badge-elem elem-poison member-elem-badge">Mortis · Mago da Pestilência</div>
+            <div class="member-contributions">
+              <p>Estrutura de dados, hierarquia de classes, sistema de estados alterados e documentação técnica.</p>
+            </div>
           </div>
 
         </div>
 
         <!-- Banner de Jornada Concluída -->
-        <div class="banner-img-container" style="margin:2.5rem 0 1rem; border-color:var(--border-gold);">
-          <img src="Imagens/gui/jornada-concluida.png" alt="Jornada Concluída" style="height:320px; object-fit:cover;" />
-          <div class="banner-caption">Jornada Concluída — Arcane Dead 2026</div>
+        <div class="banner-img-container completion-banner tilt-target">
+          <img src="Imagens/gui/jornada-concluida.png" alt="Jornada Concluída" />
+          <div class="banner-caption">Arcane Dead — Projeto Concluído</div>
         </div>
 
         <!-- Destaque do Repositório GitHub -->
-        <div class="repo-featured-card">
+        <div class="repo-featured-card tilt-target">
           <div class="repo-info">
-            <div class="badge-highlight" style="margin-bottom:0.5rem;">Código Aberto & Documentação Completa</div>
+            <div class="badge-highlight">Código Aberto & Documentação Completa</div>
             <h3>Repositório Oficial do Arcane Dead</h3>
             <p>
-              Código-fonte completo em C# .NET 8, documentação de arquitetura, GDD, diagramas de classe em Mermaid e executáveis prontos para rodar.
+              Código-fonte completo em C# .NET 8, documentação de arquitetura, GDD, diagramas de classe em Mermaid e executáveis prontos para execução.
             </p>
           </div>
 
           <div class="repo-link-box">
-            <a href="https://github.com/gspvlr/Arcane-Dead" target="_blank" class="btn-github-large">
-              <span>🐙</span> Acessar Repositório GitHub
+            <a href="https://github.com/gspvlr/Arcane-Dead" target="_blank" rel="noopener noreferrer" class="btn-github-large">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>Acessar Repositório GitHub</span>
             </a>
           </div>
         </div>
 
-        <div class="section-quote" style="margin-top:2.5rem;">
-          "Toda magia deixa um eco. Toda morte cobra um nome. Muito obrigado a todos pela atenção!"
+        <div class="section-quote final-quote">
+          "Toda magia deixa um eco. Toda morte cobra um nome. Muito obrigado pela atenção!"
         </div>
       </section>
 
